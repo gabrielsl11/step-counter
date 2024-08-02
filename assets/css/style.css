@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --drcolor: #405D72;
+    --dcolor: #758694;
+    --lcolor: #F7E7DC;
+    --lrcolor: #FFF8F3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', sans-serif;
+    transition: all .2s;
+    text-decoration: none;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--drcolor);
+    gap: 45px;
+}
+
+h1 {
+    color: var(--lrcolor);
+}
+
+section {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background: var(--lcolor);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    padding: 25px;
+    gap: 15px;
+}
+
+.input-field {
+    display: flex;
+    padding: 10px;
+    border-radius: 7.5px;
+    background: var(--lrcolor);
+    gap: 5px;
+}
+
+span {
+    font-weight: 500;
+    width: 20%;
+}
+
+input {
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: transparent;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+.input-field:hover {
+    filter: brightness(.965);
+}
+
+.input-field:focus-within {
+    outline: 1px solid var(--drcolor);
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 7.5px;
+    background: var(--drcolor);
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+button:hover {
+filter: brightness(.975);
+}
+
+p {
+    width: 100%;
+}
+
+.fa-stopwatch {
+    color: var(--dcolor);
+}
+
+.fa-flag-checkered {
+    color: var(--dcolor);
+}
+
+a {
+    color: var(--lrcolor);
+}
+
+a:hover {
+    color: var(--dcolor);
+}
